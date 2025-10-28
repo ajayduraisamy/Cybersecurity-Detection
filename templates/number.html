@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+<h2>📞 Phone Number Detector</h2>
+<form method="POST">
+    <input type="text" name="number" placeholder="Enter phone number" required>
+    <button type="submit">Check</button>
+</form>
+{% if result %}
+<p class="result">Prediction: {{ result }}</p>
+{% endif %}
